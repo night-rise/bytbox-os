@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>BytBox OS</title>
+    <meta name="title" content="BytBox OS - Retro Web Terminal">
+    <meta name="description" content="A retro-styled in-browser terminal playground. Type commands, explore a virtual filesystem, and pretend you're inside a cyberpunk OS.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icons/favicon.png">
+
+    <!-- Open Graph / Facebook / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coffeemaker.github.io/bytbox/">
+    <meta property="og:title" content="BytBox OS - Retro Web Terminal">
+    <meta property="og:description" content="A fun retro terminal in your browser. Virtual filesystem, themes, easter eggs, and a fake OS installer!">
+    <meta property="og:image" content="https://coffeemaker.github.io/bytbox/assets/icons/favicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://coffeemaker.github.io/bytbox/">
+    <meta property="twitter:title" content="BytBox OS - Retro Web Terminal">
+    <meta property="twitter:description" content="A fun retro terminal in your browser. Virtual filesystem, themes, easter eggs, and a fake OS installer!">
+    <meta property="twitter:image" content="https://coffeemaker.github.io/bytbox/assets/icons/favicon.png">
+
+    <!-- Local pixel font -->
+    <style>
+        @font-face {
+            font-family: 'PressStart2P';
+            src: url('assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+    <!-- Main styles (CRT, neon, windows, popups, timers) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Terminal container -->
+    <div id="terminal"></div>
+
+    <!-- Desktop windows (for the fake OS) -->
+    <div id="desktop-windows"></div>
+
+    <!-- FBI timer (hidden by default, shown when troll mode is on) -->
+    <div id="fbi-timer" class="hidden">Time until FBI arrives: <span id="fbi-countdown">9:59</span></div>
+
+    <!-- Sound library (Howler.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+
+    <!-- Our scripts in dependency order -->
+    <script src="utils.js"></script>
+    <script src="commands.js"></script>
+    <script src="terminal.js"></script>
+    <script src="os.js"></script>
+    <script src="apps.js"></script>
+</body>
+</html>
