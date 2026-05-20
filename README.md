@@ -4,7 +4,7 @@
 Type commands, explore a virtual filesystem, edit files with a built-in editor, change themes, and pretend you're inside a cyberpunk operating system.
 
 🟢 **Status:** In active development – new features coming soon!  
-🔴 **Try it live:** [https://night-rise.github.io/bytbox/](https://night-rise.github.io/bytbox/)
+🔴 **Try it live:** [https://night-rise.github.io/bytbox-os/](https://night-rise.github.io/bytbox-os/) 
 
 ---
 
